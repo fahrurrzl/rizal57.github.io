@@ -1,0 +1,459 @@
+:root {
+  --primary-color: #222831;
+  --secondary-color: #393e46;
+  --blue-one: #00adb5;
+  --blue-two: #00fff5;
+  --white: #eaeaea;
+}
+
+* {
+  font-family: 'Poppins', sans-serif;
+  color: var(--white);
+  text-decoration: none !important;
+}
+
+body {
+  background: var(--primary-color);
+}
+
+.text-input {
+  color: var(--white);
+  opacity: 0.8;
+}
+.text-input:focus {
+  color: var(--white);
+  opacity: 1;
+}
+
+/* Utiltis */
+.circle {
+  width: 80px;
+  height: 80px;
+  background: none;
+  border: 2px solid var(--blue-two);
+  filter: blur(4px);
+  border-radius: 50%;
+}
+.square {
+  width: 80px;
+  height: 80px;
+  background: none;
+  border: 2px solid var(--blue-two);
+}
+.btn-mine {
+  outline: none;
+  border: 0;
+  background: linear-gradient(to bottom, var(--blue-two), var(--primary-color));
+  color: var(--white);
+  transition: 0.3s ease-in-out;
+}
+.btn-mine:hover {
+  background: linear-gradient(to left bottom, var(--blue-two), var(--primary-color));
+  color: var(--white);
+  transform: translateX(5px) translateY(-5px);
+  box-shadow: -2px 3px 4px var(--blue-two);
+}
+
+.btn-mine-outline {
+  outline: 1px solid var(--white);
+  background: none;
+  color: var(--white);
+  transition: 0.3s ease-in-out;
+}
+.btn-mine-outline:hover {
+  color: var(--white);
+  transform: translateX(5px) translateY(-5px);
+  box-shadow: -2px 3px 4px var(--white);
+}
+
+/* Utilitis end */
+
+.navbar .nav-item a {
+  color: var(--blue-two) !important;
+}
+.navbar .nav-item .nav-link:hover {
+  color: var(--blue-one) !important;
+}
+.navbar-brand {
+  color: var(--blue-two) !important;
+}
+.navbar {
+  background: var(--primary-color);
+}
+.navbar-toggler {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  transition: 0.3s;
+}
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
+  border: 0;
+}
+.navbar-toggler span {
+  margin: 0;
+  padding: 0;
+}
+.toggler-icon {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: var(--blue-two);
+  border-radius: 1px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: 0.3s ease-in-out;
+}
+
+.center-bar {
+  margin-top: 0;
+}
+.navbar-toggler .top-bar {
+  margin-top: 0px;
+  transform: rotate(135deg);
+}
+.navbar-toggler .center-bar {
+  width: 60%;
+  left: 50%;
+  transform: translateX(-15%);
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+.navbar-toggler .bottom-bar {
+  margin: 0;
+  transform: rotate(-135deg);
+}
+
+/* When navbar collapsed */
+.navbar-toggler.collapsed .top-bar {
+  margin-top: -1rem;
+  transform: rotate(0deg);
+}
+.navbar-toggler.collapsed .center-bar {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+.navbar-toggler.collapsed .bottom-bar {
+  margin-top: 1rem;
+  transform: rotate(0deg);
+}
+
+.hero {
+  min-height: 100vh;
+}
+.card-hero {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  background: var(--secondary-color);
+  margin-top: 75px;
+  border-radius: 5px;
+  transform-style: preserve-3d;
+}
+.card-hero:hover {
+  box-shadow: 0 0 15px #00fff771;
+}
+.card-hero:hover img {
+  transform: translateX(-50%) translateY(-5%) translateZ(20px) scale(1.1);
+}
+.card-hero img {
+  position: absolute;
+  width: 200px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 0.3s;
+}
+.card-hero .circle {
+  position: absolute;
+  right: 20%;
+  top: 40%;
+  z-index: 10;
+  transition: 0.5s;
+}
+.card-hero:hover .circle {
+  transform: translateZ(50px) scale(1.2);
+}
+.card-hero .square {
+  position: absolute;
+  top: 16%;
+  left: 20%;
+  width: 50px;
+  height: 50px;
+  transform: rotate(-15deg);
+}
+.nama {
+  color: var(--blue-two);
+  letter-spacing: 3px;
+  margin-top: -10px;
+}
+
+.cta {
+  align-items: center !important;
+}
+.sosmed-icon {
+  font-size: 20px;
+}
+
+.sosmed-icon i {
+  transition: 0.3s ease-in-out;
+  display: inline-block;
+}
+.sosmed-icon i:hover {
+  color: var(--blue-two);
+  transform: translateY(-2px);
+}
+.mouse-scroll {
+  margin-top: 15%;
+  width: 25px;
+  height: 35px;
+  border-radius: 1rem;
+  border: 1px solid var(--blue-two);
+  overflow: hidden;
+}
+.mouse-scroll i {
+  display: block;
+  color: var(--blue-two);
+  animation: animasiScroll 2s ease-in-out infinite;
+}
+@keyframes animasiScroll {
+  0% {
+    transform: translateY(0);
+    opacity: 0.5;
+  }
+  50% {
+    transform: translateY(50%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 0.5;
+  }
+}
+
+.project {
+  padding-top: 70px;
+  position: relative;
+  overflow: hidden;
+}
+.card-project {
+  overflow: hidden;
+}
+.img-project {
+  border-radius: 5px;
+  margin: 5px 5px 0 5px;
+  overflow: hidden;
+}
+.project::after {
+  content: 'Project';
+  font-size: 100px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  color: var(--primary-color);
+  -webkit-text-stroke: 2px var(--blue-two);
+  position: absolute;
+  top: 0%;
+  right: -25%;
+  opacity: 0.1;
+  z-index: -1;
+}
+.card-project {
+  background: var(--secondary-color);
+  border-radius: 10px;
+}
+.card-project img {
+  transform: scale(1.1);
+  transition: 0.3s ease-in-out;
+}
+.card-project:hover img {
+  transform: scale(1);
+}
+
+.card-title {
+  color: var(--blue-one);
+}
+.card-text,
+.card-text i {
+  color: var(--blue-one);
+  transition: 0.3s ease-in-out;
+}
+.card-text:hover,
+.card-text:hover i {
+  color: var(--blue-two);
+}
+
+.card.email {
+  border: 1px solid #393e467a !important;
+  background: linear-gradient(to bottom, #393e46, #222831);
+  outline: none;
+  border: 0;
+  transform-style: preserve-3d;
+}
+.txt-email {
+  font-weight: bold;
+  transition: 0.5s;
+}
+.btn-email {
+  transition: 0.5s;
+}
+.card.email:hover .txt-email {
+  transform: translateZ(50px) scale(1.25) rotate(-3deg);
+}
+.card.email:hover .btn-email {
+  transform: translateZ(100px) scale(1.1);
+}
+
+.testimonial {
+  position: relative;
+  overflow: hidden;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.testimonial::after {
+  content: 'Testimonial';
+  font-size: 100px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  color: var(--primary-color);
+  -webkit-text-stroke: 2px var(--blue-two);
+  position: absolute;
+  top: 10%;
+  right: -80%;
+  opacity: 0.1;
+  z-index: -1;
+}
+.card-testimonial {
+  display: flex;
+  background: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  outline: none;
+  margin-top: 100px;
+}
+.card-testimonial img {
+  width: 70px;
+  border-radius: 50%;
+}
+
+.text-testimonial h6 {
+  margin-top: -10px !important;
+}
+
+.text-testimonial p {
+  font-size: 20px;
+}
+
+.toolsSkills {
+  margin-bottom: 100px;
+  margin-top: 70px;
+}
+.tools {
+  width: 30px;
+  filter: grayscale(1);
+  transition: 0.3s;
+}
+.tools:hover {
+  filter: grayscale(0);
+}
+
+footer {
+  background: var(--secondary-color);
+  padding: 20px;
+}
+
+/* Desktop Large*/
+@media (min-width: 768px) {
+  .hero {
+    margin-top: 10px;
+  }
+  .text-hero {
+    margin-top: 150px !important;
+  }
+  .cta {
+    margin-top: -150px;
+  }
+  .mouse-scroll {
+    margin-top: 10%;
+  }
+
+  .project {
+    padding-top: 80px;
+  }
+
+  /* .img-project {
+    border-radius: 5px;
+    margin: 5px 5px 0 5px;
+    overflow: hidden;
+  } */
+
+  .project::after {
+    font-size: 200px;
+    font-weight: bold;
+    letter-spacing: 25px;
+    top: 0%;
+    right: 5%;
+  }
+
+  .card.email {
+    height: 150px;
+    border-radius: 1rem;
+    padding: 0 30px 0 30px;
+  }
+  .card.email .card-body {
+    flex-direction: row !important;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .txt-email p {
+    font-size: 20px;
+  }
+
+  .testimonial::after {
+    font-size: 200px;
+    letter-spacing: 25px;
+    color: var(--primary-color);
+    top: 0%;
+    right: -30%;
+  }
+
+  .tools {
+    width: 50px;
+  }
+
+  footer {
+    height: 250px;
+  }
+
+  .sosmed-icon {
+    font-size: 28px;
+  }
+}
+
+/* Desktop Medium */
+@media (min-width: 992px) {
+  .card-hero .circle {
+    right: 6%;
+  }
+}
+
+/* Tablet */
+/* @media (min-width: 768px) {
+  .card-hero .circle {
+    width: 60px;
+    height: 60px;
+    top: 50%;
+    right: 0;
+  }
+  .card-hero .square {
+    left: 1%;
+    top: 25%;
+  }
+} */
