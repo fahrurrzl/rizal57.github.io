@@ -364,6 +364,10 @@ body {
   filter: grayscale(0);
 }
 
+.contact {
+  margin-top: 70px;
+}
+
 footer {
   background: var(--secondary-color);
   padding: 20px;
