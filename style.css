@@ -149,7 +149,7 @@ body {
 }
 .card-hero {
   position: relative;
-  width: 100%;
+  width: 95%;
   height: 300px;
   background: var(--secondary-color);
   margin-top: 75px;
