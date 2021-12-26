@@ -149,7 +149,7 @@ body {
 }
 .card-hero {
   position: relative;
-  width: 95%;
+  width: 100%;
   height: 300px;
   background: var(--secondary-color);
   margin-top: 75px;
@@ -160,7 +160,7 @@ body {
   box-shadow: 0 0 15px #00fff771;
 }
 .card-hero:hover img {
-  transform: translateX(-50%) translateY(-5%) translateZ(20px) scale(1.1);
+  transform: translateX(-50%) translateY(-3%) translateZ(20px) scale(1.05);
 }
 .card-hero img {
   position: absolute;
