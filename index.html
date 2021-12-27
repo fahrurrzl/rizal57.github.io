@@ -173,7 +173,7 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-md-8">
-            <div class="mySwiper">
+            <div data-aos="fade-up" class="mySwiper">
               <div class="swiper-wrapper">
                 <div class="swiper-slide card-testimonial">
                   <img src="img/img3.png" alt="Profile Image" />
@@ -182,13 +182,13 @@
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, corporis!</p>
                 </div>
                 <div class="swiper-slide card-testimonial">
-                  <img src="img/img3.png" alt="Profile Image" />
+                  <img src="img/img2.png" alt="Profile Image" />
                   <h5>Yuu RIn</h5>
                   <h6>CEO</h6>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, corporis!</p>
                 </div>
                 <div class="swiper-slide card-testimonial">
-                  <img src="img/img3.png" alt="Profile Image" />
+                  <img src="img/img1.png" alt="Profile Image" />
                   <h5>Yuu RIn</h5>
                   <h6>CEO</h6>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, corporis!</p>
@@ -292,18 +292,18 @@
 
     <!-- Initialize Swiper -->
     <script>
-      var swiper = new Swiper(".mySwiper", {
+      var swiper = new Swiper('.mySwiper', {
         grabCursor: true,
-        effect: "creative",
+        effect: 'creative',
         creativeEffect: {
           prev: {
             shadow: true,
-            translate: ["-125%", 0, -800],
+            translate: ['-125%', 0, -800],
             rotate: [0, 0, -90],
           },
           next: {
             shadow: true,
-            translate: ["125%", 0, -800],
+            translate: ['125%', 0, -800],
             rotate: [0, 0, 90],
           },
         },
