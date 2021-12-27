@@ -145,6 +145,7 @@ body {
 }
 
 .hero {
+  position: relative;
   min-height: 100vh;
 }
 .card-hero {
