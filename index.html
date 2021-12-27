@@ -292,20 +292,20 @@
 
     <!-- Initialize Swiper -->
     <script>
-      var swiper = new Swiper('.mySwiper', {
-        effect: 'coverflow',
+      var swiper = new Swiper(".mySwiper", {
         grabCursor: true,
-        centeredSlides: true,
-        slidesPerView: 'auto',
-        coverflowEffect: {
-          rotate: 50,
-          stretch: 0,
-          depth: 100,
-          modifier: 1,
-          slideShadows: true,
-        },
-        pagination: {
-          el: '.swiper-pagination',
+        effect: "creative",
+        creativeEffect: {
+          prev: {
+            shadow: true,
+            translate: ["-125%", 0, -800],
+            rotate: [0, 0, -90],
+          },
+          next: {
+            shadow: true,
+            translate: ["125%", 0, -800],
+            rotate: [0, 0, 90],
+          },
         },
       });
     </script>

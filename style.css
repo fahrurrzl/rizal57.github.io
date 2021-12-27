@@ -330,8 +330,8 @@ body {
 }
 .card-testimonial {
   display: flex;
-  background: rgba(57, 62, 70, 0.4);
-  border: 1px solid rgba(57, 62, 70, 0.9);
+  border: 1px solid #393e467a !important;
+  background: linear-gradient(to bottom, #393e46, #222831);
   backdrop-filter: blur(5px);
   flex-direction: column;
   justify-content: center;
