@@ -9,6 +9,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
     <!-- AOS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <!-- My CSS -->
     <link rel="stylesheet" href="style.css" />
     <!-- Icons -->
@@ -171,12 +173,26 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-md-8">
-            <div data-aos="zoom-in-up" class="card-testimonial">
-              <img src="img/img3.png" alt="Profil testimonial" />
-              <div class="text-testimonial text-center mt-2">
-                <h3>Yuu Rin</h3>
-                <h6 class="card-subtitle mb-2 text-muted">Designer</h6>
-                <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, enim!"</p>
+            <div class="mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide card-testimonial">
+                  <img src="img/img3.png" alt="Profile Image" />
+                  <h5>Yuu RIn</h5>
+                  <h6>CEO</h6>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, corporis!</p>
+                </div>
+                <div class="swiper-slide card-testimonial">
+                  <img src="img/img3.png" alt="Profile Image" />
+                  <h5>Yuu RIn</h5>
+                  <h6>CEO</h6>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, corporis!</p>
+                </div>
+                <div class="swiper-slide card-testimonial">
+                  <img src="img/img3.png" alt="Profile Image" />
+                  <h5>Yuu RIn</h5>
+                  <h6>CEO</h6>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, corporis!</p>
+                </div>
               </div>
             </div>
           </div>
@@ -269,6 +285,28 @@
       VanillaTilt.init(document.querySelector('.email'), {
         max: 6,
         speed: 400,
+      });
+    </script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper('.mySwiper', {
+        effect: 'coverflow',
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        },
+        pagination: {
+          el: '.swiper-pagination',
+        },
       });
     </script>
     <!-- My JS -->
