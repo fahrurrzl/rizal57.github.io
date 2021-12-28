@@ -55,10 +55,10 @@
 
     <!-- Hero start -->
     <section class="hero" id="hero">
-      <div class="container hero">
+      <div class="container">
         <div class="row hero-container">
           <div class="col-md-3 offset-md-3 order-md-2 my-md-5">
-            <div class="card-hero ms-md-auto">
+            <div class="card-hero ms-md-auto" data-tilt-max-glare="0.2">
               <div class="circle"></div>
               <div class="square"></div>
               <img class="img-fluid" src="img/profil 1.png" alt="" />
@@ -264,13 +264,13 @@
     <script>
       gsap.registerPlugin(TextPlugin);
       gsap.to('.nama', { duration: 2, delay: 0.7, text: 'Steave Job' });
-      gsap.from('.card-hero', { duration: 1, y: 100, opacity: 0, ease: 'back' });
+      gsap.from('.card-hero', { duration: 1, x: 100, opacity: 0, ease: 'back' });
       gsap.from('.text-hero', { duration: 1, x: -100, opacity: 0, ease: 'back' });
       gsap.from('.cta', { duration: 1, y: 100, opacity: 0, ease: 'back', delay: 0.5 });
     </script>
     <!-- Tilt JS -->
     <script type="text/javascript" src="vanilla-tilt.min.js"></script>
-    <!-- <script>
+    <script>
       VanillaTilt.init(document.querySelector('.card-hero'), {
         max: 15,
         speed: 500,
@@ -286,7 +286,7 @@
         max: 6,
         speed: 400,
       });
-    </script> -->
+    </script>
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 

@@ -145,10 +145,8 @@ body {
 }
 
 .hero {
+  min-width: 100%;
   min-height: 100vh;
-}
-.hero-container {
-  position: relative;
 }
 .card-hero {
   position: relative;
